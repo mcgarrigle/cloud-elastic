@@ -2,14 +2,36 @@
 version: "2"
 
 guests:
-  rocky:
-    hostname: bench.local
+
+  es1:
+    hostname: es1
     os: rocky8
-    initialise: install
-    args: 'console=ttyS0 ip=dhcp inst.text inst.ks=http://pi4.mac.wales/rocky8.ks'
-    cores: 1
+    initialise: clone
+    cores: 2
     memory: 2048
     disks:
       vda: 50G
     interfaces:
-      eth0: bridge=br0
+      eth0: network=default
+
+  es2:
+    hostname: es2
+    os: rocky8
+    initialise: clone
+    cores: 2
+    memory: 2048
+    disks:
+      vda: 50G
+    interfaces:
+      eth0: network=default
+
+  es3:
+    hostname: es3
+    os: rocky8
+    initialise: clone
+    cores: 2
+    memory: 2048
+    disks:
+      vda: 50G
+    interfaces:
+      eth0: network=default

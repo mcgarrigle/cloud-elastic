@@ -1,0 +1,4 @@
+
+
+ansible-galaxy install elastic.elasticsearch,v7.14.0
+
