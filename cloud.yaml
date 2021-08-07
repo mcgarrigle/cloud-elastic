@@ -8,7 +8,7 @@ guests:
     os: rocky8
     initialise: clone
     cores: 2
-    memory: 2048
+    memory: 4096
     disks:
       vda: 50G
     interfaces:
@@ -19,7 +19,7 @@ guests:
     os: rocky8
     initialise: clone
     cores: 2
-    memory: 2048
+    memory: 4096
     disks:
       vda: 50G
     interfaces:
@@ -30,7 +30,7 @@ guests:
     os: rocky8
     initialise: clone
     cores: 2
-    memory: 2048
+    memory: 4096
     disks:
       vda: 50G
     interfaces:

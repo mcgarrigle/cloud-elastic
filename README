@@ -1,4 +1,12 @@
+# cloud up; watch cloud ls
+# cloud inv > inventory.yaml
+# ansible-playbook -i inventory.yaml commission.yaml
 
+// reload network
 
-ansible-galaxy install elastic.elasticsearch,v7.14.0
+# cloud stop
+# cloud up
 
+# ansible-galaxy install elastic.elasticsearch,v7.14.0
+
+# ansible-playbook -i inventory.yaml cluster.yaml
