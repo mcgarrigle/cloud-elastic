@@ -3,6 +3,17 @@ version: "2"
 
 guests:
 
+  kb:
+    hostname: kb
+    os: rocky8
+    initialise: clone
+    cores: 2
+    memory: 4096
+    disks:
+      vda: 10G
+    interfaces:
+      eth0: network=default
+
   es1:
     hostname: es1
     os: rocky8

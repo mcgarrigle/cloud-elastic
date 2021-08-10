@@ -56,3 +56,12 @@
     es_plugins:
       - plugin: ingest-attachment
 
+- hosts: kb
+  roles:
+    - role: fedelemantuano.kibana
+  vars:
+    kibana_config:
+      server.name: "{{ inventory_hostname }}"
+      server.port: 5601
+      server.host: "{{ ansible_default_ipv4.address }}"
+      elasticsearch.hosts: "http://es1:9200"

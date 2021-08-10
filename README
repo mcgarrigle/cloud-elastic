@@ -8,5 +8,6 @@
 # cloud up
 
 # ansible-galaxy install elastic.elasticsearch,v7.14.0
+# ansible-galaxy install fedelemantuano.kibana
 
 # ansible-playbook -i inventory.yaml cluster.yaml
